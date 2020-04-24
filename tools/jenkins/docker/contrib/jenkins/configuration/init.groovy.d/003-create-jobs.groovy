@@ -62,7 +62,7 @@ core_jobs = [ new Expando(jobName: "${name}-cicd",
                           credentialsId: githubCredentialsId,
                           jenkinsFilePath: "Jenkinsfile-develop",
                           traits: masterTraits,
-                          startJob: true)
+                          startJob: true),
                    new Expando(jobName: "${name}-api-dev",
                           displayName: "${name}-api-dev",
                           owner: repoOwner,
